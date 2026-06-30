@@ -16,7 +16,7 @@ header {
     padding: 1rem;
 }
 
-/* 3. Span do header como bloco */
+/* 3. Span do header  */
 header span {
     display: block;
 }
@@ -35,19 +35,18 @@ nav a {
     padding: 0.5rem 1rem;
 }
 
-/* 5. Hover na navegação */
 nav a:hover {
     background-color: #f2a541;
     color: #1b3a4b;
 }
 
-/* 6. Main com largura limitada e centralizado */
+/* 5. Main com largura  */
 main {
     max-width: 900px;
     margin: 0 auto;
 }
 
-/* 7. Cards em CSS Grid */
+/* 6. Cards em CSS Grid */
 main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -65,12 +64,4 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem;
-}
-body {
-    font-family: 'Open Sans', Arial, sans-serif;
-}
-
-h1,
-h2 {
-    font-family: 'Poppins', Arial, sans-serif;
 }
