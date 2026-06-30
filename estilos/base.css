@@ -40,17 +40,13 @@ nav a:hover {
     color: #1b3a4b;
 }
 
-/* 5. Main com largura  */
-main {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-/* 6. Cards em CSS Grid */
+/* 5. Cards em CSS Grid */
 main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+     max-width: 900px;
+    margin: 0 auto;
 }
 
 .card {
