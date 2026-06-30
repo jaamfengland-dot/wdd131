@@ -1,0 +1,68 @@
+/* 1. Esquema de cores e tipografia */
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #222;
+    background-color: #f7f5f0;
+}
+
+h1, h2 {
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+header {
+    background-color: #1b3a4b;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* 3. Span do header como bloco */
+header span {
+    display: block;
+}
+
+/* 4. Navegação com CSS Flex */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+/* 5. Hover na navegação */
+nav a:hover {
+    background-color: #f2a541;
+    color: #1b3a4b;
+}
+
+/* 6. Main com largura limitada e centralizado */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* 7. Cards em CSS Grid */
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+
+footer {
+    background-color: #1b3a4b;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
