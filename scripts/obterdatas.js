@@ -5,5 +5,5 @@ const anoAtual = new Date().getFullYear();
 document.getElementById("anoatual").textContent = anoAtual;
 
 // Exibe a data da última modificação do documento
-document.getElementById("ultimaModificacao").textContent =
-    `Última modificação: ${document.lastModified}`;
+document.getElementById("ultimamodificacao").textContent =
+    `ultima modificação: ${document.lastModified}`;

@@ -21,7 +21,7 @@ header span {
     display: block;
 }
 
-/* 4. Navegação com CSS Flex */
+/* 4. Navegação com css flex */
 nav ul {
     list-style: none;
     display: flex;
@@ -40,7 +40,7 @@ nav a:hover {
     color: #1b3a4b;
 }
 
-/* 5. Cards em CSS Grid */
+/* 5. Cards em css grid */
 main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
