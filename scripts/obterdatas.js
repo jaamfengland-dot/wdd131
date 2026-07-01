@@ -2,9 +2,8 @@
 const anoAtual = new Date().getFullYear();
 
 // Exibe o ano dos direitos autorais
-document.getElementById("copyright").textContent =
-    `© ${anoAtual}`;
+document.getElementById("anoatual").textContent = anoAtual;
 
 // Exibe a data da última modificação do documento
-document.getElementById("lastModified").textContent =
+document.getElementById("ultimaModificacao").textContent =
     `Última modificação: ${document.lastModified}`;
