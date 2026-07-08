@@ -1,4 +1,4 @@
-/* templos.css  */
+/* templos.css */
 
 * {
     box-sizing: border-box;
@@ -6,7 +6,7 @@
 
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     color: #222;
     background-color: #f7f7f7;
 }
@@ -49,6 +49,7 @@ main {
 main h1 {
     text-align: center;
     font-size: 1.3rem;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
 figure {
