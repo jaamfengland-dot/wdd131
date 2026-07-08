@@ -1,11 +1,28 @@
+@media screen and (min-width: 700px) {
 
-@media screen and (min-width: 500px) {
-  header {
-    background-color: #000;
-    color: #fff;
-  }
-  
-  main {
-    grid-template-columns: 1fr 1fr;
-  }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+    header .titulo-site {
+        margin: 0;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    main h1 {
+        grid-column: 1 / -1;
+    }
 }
