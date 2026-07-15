@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Fundamentos da Web Dinâmica - João Augusto Anselmo Moraes Ferreira</title>
+    <meta name="description"
+        content="WDD 131 – Fundamentos da Web Dinâmica, por João Augusto Anselmo Moraes Ferreira.">
+    <meta name="author" content="João Augusto Anselmo Moraes Ferreira">
+
+    <script src="scripts/local.js" defer></script>
+
+    <link rel="stylesheet" href="estilos/local.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Brasil</h1>
+    </header>
+
+    <main>
+        <section class="dados">
+            <h2>Dados</h2>
+            <p><span class="rotulo">Capital:</span> <span class="valor">Brasília</span></p>
+            <p><span class="rotulo">Idioma:</span> <span class="valor">Português</span></p>
+            <p><span class="rotulo">Moeda:</span> <span class="valor">Real (R$)</span></p>
+            <p><span class="rotulo">População:</span> <span class="valor">203 milhões</span></p>
+            <p><span class="rotulo">Fuso horário:</span> <span class="valor">UTC-3</span></p>
+        </section>
+          <picture class="imagem-principal">
+           <source media="(min-width: 600px)" srcset="imagens/brasil.webp">
+           <img src="imagens/brasil.webp" alt="Paisagem do Brasil" width="800" height="600">
+         </picture>
+
+        <section class="clima">
+            <h2>Clima <img src="imagens/icone-clima.svg" alt="Ícone do clima" class="icone-clima-mobile"></h2>
+            <p><span class="rotulo">Temperatura:</span> <span class="valor" id="temperatura"></span></p>
+            <p><span class="rotulo">Vento:</span> <span class="valor" id="vento"></span></p>
+            <p><span class="rotulo">Sensação térmica:</span> <span class="valor" id="sensacaoTermica"></span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="anoatual"></span> João Augusto Anselmo Moraes Ferreira São Paulo</p>
+        <p id="ultimamodificacao"></p>
+    </footer>
+
+</body>
+</html>

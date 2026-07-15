@@ -1,0 +1,134 @@
+/* local.css */
+
+:root {
+    --cor-verde: #009739;
+    --cor-amarelo: #fedd00;
+    --cor-azul: #00802f;
+    --cor-fundo: #f7f7f7;
+    --cor-texto: #222;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+}
+
+header {
+    background-color: var(--cor-azul);
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 4px solid var(--cor-amarelo);
+}
+
+header h1 {
+    margin: 0;
+    color: #fff;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.dados,
+.clima {
+    background-color: #fff;
+    border: 2px solid var(--cor-verde);
+    border-radius: 6px;
+    padding: 1rem;
+    flex: 1 1 200px;
+}
+
+.dados h2,
+.clima h2 {
+    margin-top: 0;
+    color: var(--cor-verde);
+}
+
+.rotulo {
+    font-weight: bold;
+}
+
+.imagem-principal {
+    flex: 2 1 300px;
+    text-align: center;
+    order: 0;
+}
+
+.imagem-principal img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border: 2px solid var(--cor-verde);
+    border-radius: 6px;
+}
+
+.clima h2::after {
+    content: " ⛅";
+}
+
+.icone-clima-mobile {
+    display: none;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--cor-azul);
+    color: #fff;
+}
+
+/* Visualização mobile: empilha e troca o ícone do clima */
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+
+    .clima h2::after {
+        content: "";
+    }
+
+    .icone-clima-mobile {
+        display: inline;
+    }
+}
+/* Visualização mobile: empilha e reordena pra Imagem → Dados → Clima */
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+
+    .imagem-principal {
+        order: -1;
+    }
+
+    .dados {
+        order: 0;
+    }
+
+    .clima {
+        order: 1;
+    }
+
+    .clima h2::after {
+        content: "";
+    }
+
+    .icone-clima-mobile {
+        display: inline;
+    }
+}
