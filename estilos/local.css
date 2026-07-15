@@ -106,29 +106,3 @@ footer {
         display: inline;
     }
 }
-/* Visualização mobile: empilha e reordena pra Imagem → Dados → Clima */
-@media (max-width: 600px) {
-    main {
-        flex-direction: column;
-    }
-
-    .imagem-principal {
-        order: -1;
-    }
-
-    .dados {
-        order: 0;
-    }
-
-    .clima {
-        order: 1;
-    }
-
-    .clima h2::after {
-        content: "";
-    }
-
-    .icone-clima-mobile {
-        display: inline;
-    }
-}
