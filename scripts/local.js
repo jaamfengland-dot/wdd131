@@ -1,4 +1,4 @@
-// Valores estáticos de temperatura e vento (métrica: °C e km/h)
+// Valores de temperatura e vento (métrica: °C e km/h)
 const temperaturaC = 8;
 const ventoKmh = 15;
 
@@ -14,8 +14,10 @@ if (temperaturaC <= 10 && ventoKmh > 4.8) {
 } else {
     document.getElementById("sensacaoTermica").textContent = "N/A";
 }
-
+// Obtém o ano atual
 const anoAtual = new Date().getFullYear();
+// Exibe o ano dos direitos autorais
 document.getElementById("anoatual").textContent = anoAtual;
+// Exibe a data da última modificação do documento
 document.getElementById("ultimamodificacao").textContent =
     `ultima modificação: ${document.lastModified}`;
