@@ -96,8 +96,9 @@ document.getElementById("ultimamodificacao").textContent =
 ]
 
 const listaTemplos = document.getElementById("lista-templos");
+const tituloFiltro = document.getElementById("titulo-filtro");
 
-templos.forEach(function (templo) {
+function criarCard(templo) {
     const card = document.createElement("div");
     card.classList.add("card-templo");
 
@@ -105,9 +106,53 @@ templos.forEach(function (templo) {
         <h2>${templo.nomeDoTemplo}</h2>
         <p><span class="rotulo">Localização:</span> ${templo.localizacao}</p>
         <p><span class="rotulo">Dedicado:</span> ${templo.consagracao}</p>
-        <p><span class="rotulo">Tamanho:</span> ${templo.area} sq ft</p>
+        <p><span class="rotulo">Tamanho:</span> ${templo.area} pés²</p>
         <img src="${templo.urlDaImagem}" alt="${templo.nomeDoTemplo}" loading="lazy">
     `;
 
-    listaTemplos.appendChild(card);
+    return card;
+}
+
+function renderizarTemplos(listaFiltrada) {
+    listaTemplos.innerHTML = "";
+    listaFiltrada.forEach(function (templo) {
+        listaTemplos.appendChild(criarCard(templo));
+    });
+}
+
+function anoDaConsagracao(templo) {
+    return parseInt(templo.consagracao.split(",")[0]);
+}
+
+function aplicarFiltro(tipo) {
+    let filtrados;
+
+    if (tipo === "antigos") {
+        filtrados = templos.filter(t => anoDaConsagracao(t) < 1900);
+        tituloFiltro.textContent = "Templos Antigos";
+    } else if (tipo === "novos") {
+        filtrados = templos.filter(t => anoDaConsagracao(t) > 2000);
+        tituloFiltro.textContent = "Templos Novos";
+    } else if (tipo === "grandes") {
+        filtrados = templos.filter(t => t.area > 90000);
+        tituloFiltro.textContent = "Templos Grandes";
+    } else if (tipo === "pequenos") {
+        filtrados = templos.filter(t => t.area < 10000);
+        tituloFiltro.textContent = "Templos Pequenos";
+    } else {
+        filtrados = templos;
+        tituloFiltro.textContent = "Início";
+    }
+
+    renderizarTemplos(filtrados);
+}
+
+document.querySelectorAll("nav a").forEach(function (link) {
+    link.addEventListener("click", function (evento) {
+        evento.preventDefault();
+        aplicarFiltro(link.dataset.filtro);
+    });
 });
+
+// Renderiza todos os templos ao carregar a página
+aplicarFiltro("todos");
