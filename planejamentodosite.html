@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planejamento do Site – ProtegeBet – João Augusto Anselmo Moraes Ferreira</title>
+    <meta name="description"
+        content="Documento de planejamento do site ProtegeBet">
+    <meta name="author" content="João Augusto Anselmo Moraes Ferreira">
+
+    <script src="script/obterdatas.js" defer></script>
+
+    <link rel="stylesheet" href="estilo/planejamento.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <img src="imagens/" alt="Logo ProtegeBet">
+
+        <div class="titulo">
+            <h1>ProtegeBet</h1>
+            <span id="course-title">Documento de Planejamento do Site – WDD 131</span>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="planejamentodosite.html">inicio</a></li>
+                <li><a href="comobuscarajuda.html">Como Buscar Ajuda</a></li>
+                <li><a href="comoseprevenir.html">Como se Prevenir</a></li>
+                <li><a href="comentesuahistoria.html">Conte sua História</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- 1. NOME DO SITE -->
+        <section class="card card-full" id="nome-do-site">
+            <h2>1. Nome do Site</h2>
+            <p><strong>ProtegeBet</strong></p>
+            <p>
+                Une a proteção com bet, deixando claro que o site ajuda pessoas a lidarem
+                com o vício em apostas online, nome curto e fácil de lembrar.
+            </p>
+        
+        </section>
+
+        <!-- 2. FINALIDADE DO SITE -->
+        <section class="card card-full" id="finalidade-do-site">
+            <h2>2. Finalidade do Site</h2>
+            <p>
+                Oferecer informação e apoio para pessoas afetadas pelo vício em apostas online: sinais
+                de dependência, canais de ajuda, dicas de prevenção e um espaço para histórias reais de
+                superação ou do desafio que está enfrentando.
+            </p>
+        </section>
+
+         <!-- 3. CENÁRIOS -->
+        <section class="card card-full" id="cenarios">
+            <h2>3. Cenários</h2>
+            <p>Perguntas que um visitante do site pode ter:</p>
+            <ul class="cenarios">
+                <li>Quais são os sinais de que minha relação com as apostas se tornou um problema?</li>
+                <li>Onde posso encontrar apoio psicológico gratuito para lidar com o vício em apostas?</li>
+            </ul>
+        </section>
+ 
+        <!-- 4. ESQUEMA DE CORES -->
+        <section class="card card-full" id="esquema-de-cores">
+            <h2>4. Esquema de Cores</h2>
+            <p>Cores já aplicadas neste documento (ver <code>estilo/planejamento.css</code>):</p>
+            <table class="tabela-cores">
+                <thead>
+                    <tr>
+                        <th>Cor</th>
+                        <th>Código</th>
+                        <th>Onde é usada</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="amostra-cor" style="background-color:#0d1b2a;"></span>Azul-marinho escuro</td>
+                        <td>#0d1b2a</td>
+                        <td>Cabeçalho, rodapé e títulos (h2) dos cards</td>
+                    </tr>
+                    <tr>
+                        <td><span class="amostra-cor" style="background-color:#5bb8ff;"></span>Azul claro</td>
+                        <td>#5bb8ff</td>
+                        <td>Subtítulo do cabeçalho e links em hover na navegação</td>
+                    </tr>
+                    <tr>
+                        <td><span class="amostra-cor" style="background-color:#eef3f8;"></span>Azul bem claro</td>
+                        <td>#eef3f8</td>
+                        <td>Fundo geral da página (body)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+ 
+        <!-- 5. TIPOGRAFIA -->
+        <section class="card card-full" id="tipografia">
+            <h2>5. Tipografia</h2>
+            <div class="exemplo-fonte titulo-fonte">
+                <strong>Poppins</strong> — títulos (h1, h2) e nome do site.
+            </div>
+ 
+            <div class="exemplo-fonte corpo-fonte">
+                <strong>Open Sans</strong> — corpo do texto e menu.
+            </div>
+        </section>
+ 
+        <!-- 6. WIREFRAME -->
+        <section class="card card-full" id="wireframe">
+            <h2>6. Wireframe</h2>
+            <p>Esboço da página inicial: mobile e desktop.</p>
+ 
+            <div class="wireframes">
+                <div class="wireframe wf-mobile">
+                    <h3>Mobile</h3>
+                    <div class="wf-caixa">Logo</div>
+                    <div class="wf-caixa">Título / Slogan</div>
+                    <div class="wf-caixa">Menu (empilhado)</div>
+                    <div class="wf-cards">
+                        <div class="wf-caixa wf-card">Card 1</div>
+                        <div class="wf-caixa wf-card">Card 2</div>
+                    </div>
+                    <div class="wf-caixa">Rodapé</div>
+                </div>
+ 
+                <div class="wireframe wf-desktop">
+                    <h3>Desktop</h3>
+                    <div class="wf-header">
+                        <div class="wf-caixa wf-logo">Logo</div>
+                        <div class="wf-caixa wf-nav">Menu (horizontal)</div>
+                    </div>
+                    <div class="wf-caixa">Título / Slogan</div>
+                    <div class="wf-cards">
+                        <div class="wf-caixa wf-card">Card 1</div>
+                        <div class="wf-caixa wf-card">Card 2</div>
+                        <div class="wf-caixa wf-card">Card 3</div>
+                    </div>
+                    <div class="wf-caixa">Rodapé</div>
+                </div>
+            </div>
+        </section>
+ 
+    </main>
+ 
+    <footer>
+        <p>&copy; <span id="anoatual"></span> ProtegeBet – São Paulo</p>
+        <p id="ultimamodificacao"></p>
+    </footer>
+ 
+</body>
+ 
+</html>
