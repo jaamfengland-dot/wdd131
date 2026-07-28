@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #222;
+    background-color: #eef3f8;
+    line-height: 1.6;
+}
+
+/* ==========================
+        CABEÇALHO
+========================== */
+
+header {
+    background-color: #0d1b2a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    flex-wrap: wrap;
+}
+
+header img {
+    width: 90px;
+    height: auto;
+}
+
+.titulo {
+    text-align: center;
+    flex: 1;
+}
+
+.titulo h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+}
+
+#course-title {
+    color: #5bb8ff;
+    font-size: 1rem;
+}
+
+/* ==========================
+         NAVEGAÇÃO
+========================== */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #5bb8ff;
+}
+
+/* ==========================
+        CONTEÚDO
+========================== */
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+    padding: 25px;
+    text-align: center;
+}
+
+.card h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #0d1b2a;
+    margin-bottom: 20px;
+}
+
+.card img {
+    width: 180px;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.card p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+/* ==========================
+          RODAPÉ
+========================== */
+
+footer {
+    background-color: #0d1b2a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+/* ==========================
+       RESPONSIVIDADE
+========================== */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+}
+/* Formulário */
+
+.contato-principal {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+form {
+    width: 100%;
+    max-width: 700px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-weight: bold;
+    color: #0d1b2a;
+}
+
+form input,
+form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 180px;
+}
+
+form button {
+    background: #0d6efd;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+form button:hover {
+    background: #0b5ed7;
+}
