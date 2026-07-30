@@ -156,3 +156,20 @@ footer {
     text-align: center;
     padding: 1rem;
 }
+/* Responsividade */
+@media (max-width: 480px) {
+    main {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .classificacao {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.3rem;
+    }
+}

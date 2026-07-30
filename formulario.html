@@ -30,35 +30,33 @@
             <div>
                 <label for="produto">Nome do Produto</label>
                 <select id="produto" name="produto" required>
-                    <option value="" disabled selected>Selecione um Produto...</option>
+                    <option value="" disabled selected>Selecione um produto ...</option>
                 </select>
             </div>
+<fieldset class="classificacao">
+    <legend>Classificação Geral</legend>
 
-            <fieldset class="classificacao">
-                <legend>Classificação Geral</legend>
-
-                <div class="estrela-item">
-                    <label for="estrela1">&star;</label>
-                    <input type="radio" id="estrela1" name="classificacao" value="1" required>
-                </div>
-                <div class="estrela-item">
-                    <label for="estrela2">&star;&star;</label>
-                    <input type="radio" id="estrela2" name="classificacao" value="2">
-                </div>
-                <div class="estrela-item">
-                    <label for="estrela3">&star;&star;&star;</label>
-                    <input type="radio" id="estrela3" name="classificacao" value="3">
-                </div>
-                <div class="estrela-item">
-                    <label for="estrela4">&star;&star;&star;&star;</label>
-                    <input type="radio" id="estrela4" name="classificacao" value="4">
-                </div>
-                <div class="estrela-item">
-                    <label for="estrela5">&star;&star;&star;&star;&star;</label>
-                    <input type="radio" id="estrela5" name="classificacao" value="5">
-                </div>
-            </fieldset>
-
+    <div class="estrela-item">
+        <label for="estrela1">&star;</label>
+        <input type="radio" id="estrela1" name="classificacao" value="1" required>
+    </div>
+    <div class="estrela-item">
+        <label for="estrela2">&star;&star;</label>
+        <input type="radio" id="estrela2" name="classificacao" value="2" required>
+    </div>
+    <div class="estrela-item">
+        <label for="estrela3">&star;&star;&star;</label>
+        <input type="radio" id="estrela3" name="classificacao" value="3" required>
+    </div>
+    <div class="estrela-item">
+        <label for="estrela4">&star;&star;&star;&star;</label>
+        <input type="radio" id="estrela4" name="classificacao" value="4" required>
+    </div>
+    <div class="estrela-item">
+        <label for="estrela5">&star;&star;&star;&star;&star;</label>
+        <input type="radio" id="estrela5" name="classificacao" value="5" required>
+    </div>
+</fieldset>
             <div>
                 <label for="data-instalacao">Data de Instalação</label>
                 <input type="date" id="data-instalacao" name="data-instalacao" required>
