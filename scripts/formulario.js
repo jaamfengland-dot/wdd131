@@ -34,6 +34,7 @@ const produtos = [
     classificacaomedia: 5.0
   }
   ];
+  
 // Preenche o select 
 const selectProduto = document.getElementById("produto");
 
