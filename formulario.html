@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Avaliação do Produto - João Augusto Anselmo Moraes Ferreira</title>
+    <meta name="description"
+        content="WDD 131 – Fundamentos da Web Dinâmica, por João Augusto Anselmo Moraes Ferreira.">
+    <meta name="author" content="João Augusto Anselmo Moraes Ferreira">
+
+    <script src="scripts/formulario.js" defer></script>
+    <link rel="stylesheet" href="estilos/formulario.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1>Avaliação do Produto</h1>
+    </header>
+
+    <main>
+        <form method="get" action="avaliacao.html">
+
+            <div>
+                <label for="produto">Nome do Produto</label>
+                <select id="produto" name="produto" required>
+                    <option value="" disabled selected>Selecione um Produto...</option>
+                </select>
+            </div>
+
+            <fieldset class="classificacao">
+                <legend>Classificação Geral</legend>
+
+                <div class="estrela-item">
+                    <label for="estrela1">&star;</label>
+                    <input type="radio" id="estrela1" name="classificacao" value="1" required>
+                </div>
+                <div class="estrela-item">
+                    <label for="estrela2">&star;&star;</label>
+                    <input type="radio" id="estrela2" name="classificacao" value="2">
+                </div>
+                <div class="estrela-item">
+                    <label for="estrela3">&star;&star;&star;</label>
+                    <input type="radio" id="estrela3" name="classificacao" value="3">
+                </div>
+                <div class="estrela-item">
+                    <label for="estrela4">&star;&star;&star;&star;</label>
+                    <input type="radio" id="estrela4" name="classificacao" value="4">
+                </div>
+                <div class="estrela-item">
+                    <label for="estrela5">&star;&star;&star;&star;&star;</label>
+                    <input type="radio" id="estrela5" name="classificacao" value="5">
+                </div>
+            </fieldset>
+
+            <div>
+                <label for="data-instalacao">Data de Instalação</label>
+                <input type="date" id="data-instalacao" name="data-instalacao" required>
+            </div>
+
+            <fieldset class="recursos">
+                <legend>Recursos Úteis <em>(Marque todos que se aplicam)</em></legend>
+
+                <div>
+                    <input type="checkbox" id="recurso-suporte" name="recursos" value="suporte-tecnico">
+                    <label for="recurso-suporte">Suporte técnico</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="recurso-manual" name="recursos" value="manual-instrucoes">
+                    <label for="recurso-manual">Manual de instruções</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="recurso-durabilidade" name="recursos" value="durabilidade">
+                    <label for="recurso-durabilidade">Durabilidade</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="recurso-instalacao" name="recursos" value="facilidade-instalacao">
+                    <label for="recurso-instalacao">Facilidade de instalação</label>
+                </div>
+            </fieldset>
+
+            <div>
+                <label for="avaliacao-escrita">Avaliação Escrita <em>(Opcional)</em></label>
+                <textarea id="avaliacao-escrita" name="avaliacao-escrita" rows="5"
+                    placeholder="Escreva sua avaliação"></textarea>
+            </div>
+
+            <div>
+                <label for="nome-usuario">Seu Nome <em>(Opcional)</em></label>
+                <input type="text" id="nome-usuario" name="nome-usuario" placeholder="Digite aqui">
+            </div>
+
+            <input type="submit" value="Publicar Avaliação">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="anoatual"></span> João Augusto Anselmo Moraes Ferreira São Paulo</p>
+        <p id="ultimamodificacao"></p>
+    </footer>
+
+</body>
+</html>

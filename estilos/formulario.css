@@ -1,0 +1,158 @@
+/* Esquema de cores e tipografia */
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #222;
+    background-color: #f7f5f0;
+    margin: 0;
+}
+
+h1, h2, legend {
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+header {
+    background-color: #1b3a4b;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+/* Card do formulário */
+main {
+    max-width: 500px;
+    margin: 1.5rem auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+label {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 0.4rem;
+}
+
+label em {
+    font-weight: 400;
+    color: #555;
+    font-style: normal;
+    font-size: 0.85rem;
+}
+
+/* Select, textarea, input text/date */
+select,
+textarea,
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: #f2f0f5;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+    background-color: #fff;
+}
+
+/* Fieldsets (classificação e recursos) */
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    font-weight: 700;
+    padding: 0;
+    margin-bottom: 0.6rem;
+}
+
+/* Classificação por estrelas */
+.classificacao {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.estrela-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.estrela-item label {
+    color: #f2a541;
+    font-size: 1.2rem;
+    margin: 0;
+    cursor: pointer;
+}
+
+.estrela-item input[type="radio"] {
+    width: 22px;
+    height: 22px;
+    accent-color: #1b3a4b;
+    cursor: pointer;
+}
+
+/* Recursos úteis (checkboxes) */
+.recursos label {
+    font-weight: 400;
+    display: inline;
+    margin-left: 0.5rem;
+}
+
+.recursos div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.recursos input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #1b3a4b;
+    cursor: pointer;
+}
+
+/* Botão de envio */
+input[type="submit"] {
+    background-color: #f2f0f5;
+    color: #1b3a4b;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #e5e1ea;
+}
+
+footer {
+    background-color: #1b3a4b;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
