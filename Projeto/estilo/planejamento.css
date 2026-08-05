@@ -190,3 +190,67 @@ form button {
 form button:hover {
     background: #0b5ed7;
 }
+
+/* Footer social midia*/
+footer {
+    background-color: #171e05e1;
+    color: #aaa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+ 
+.socialmedia {
+    display: flex;
+    gap: 8px;
+}
+ 
+.socialmedia img {
+    width: 24px;
+}
+.bet{
+    display: flex;
+    gap: 20px;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.bet img{
+    width: 220px;
+    border-radius: 10px;
+}
+
+.bet-info{
+    flex: 1;
+}
+
+.bet h3{
+    margin-bottom: 10px;
+    color: #0d1b2a;
+}
+
+.bet p{
+    text-align: justify;
+}
+
+@media (max-width:768px){
+
+    .bet{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bet img{
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .bet p{
+        text-align: center;
+    }
+}
