@@ -2,73 +2,80 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Conte sua história</title>
-    <meta name="description"
-        content="Entre em contato com a Corredeiras Rafting para tirar dúvidas, fazer reservas ou enviar sugestões sobre nossas aventuras de rafting.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Conte sua História - ProtegeBet</title>
+    <meta name="description" content="Envie seu relato ou dúvida de forma segura e anônima para a equipe do ProtegeBet.">
     <meta name="author" content="João Augusto Anselmo Moraes Ferreira">
+
+    <script src="script/obterdatas.js" defer></script>
+
     <link rel="stylesheet" href="estilo/planejamento.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <header>
-        <img src="imagens/bet.jpg" alt="Logotipo ProtegeBet " width="150">
-       <nav>
-        <ul>
-            <li><a href="planejamentodosite.html">Início</a></li>
-            <li><a href="comobuscaarajuda.html">Como Buscar ajuda</a></li>
-            <li><a href="comoseprevinir.html">Como se Prevenir </a></li>
-            <li><a href="comentesuahistoria.html">Comente sua história com nós </a></li>
-            
-        </ul>
-    </nav>
+        <img src="imagens/bet.jpg" alt="Logo ProtegeBet">
+        <div class="titulo">
+            <h1>ProtegeBet</h1>
+            <span id="course-title">Proteção que te coloca em primeiro lugar</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="planejamentodosite.html">Início</a></li>
+                <li><a href="comobuscarajuda.html">Como Buscar Ajuda</a></li>
+                <li><a href="comoseprevenir.html">Como se Prevenir</a></li>
+                <li><a href="comentesuahistoria.html">Conte sua História</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
+        <section class="card">
+            <h2>Conte sua História</h2>
+            <p>
+                Sua história pode inspirar outras pessoas.
+                Compartilhe sua experiência com as apostas,
+                como isso afetou sua vida e como você está superando esse desafio.
+                Sua identidade será respeitada.
+            </p>
+        </section>
 
-        <!-- FORMULÁRIO -->
-       <div class="info-site">
-      <h1>Conte sua História</h1>
-
-    <p>
-        Sua história pode inspirar outras pessoas.
-        Compartilhe sua experiência com as apostas,
-        como isso afetou sua vida e como você está superando esse desafio.
-        Sua identidade será respeitada.
-    </p>
-   </div>
-            <form>
+        <div class="contato-principal">
+            <form action="#" method="post">
                 <label for="nome-completo">Nome</label>
-                <input type="text" id="nome-completo" name="nome-completo" placeholder="Digite aqui" required>
+                <input type="text" id="nome-completo" name="nome-completo" placeholder="Digite seu nome" required>
 
                 <label for="email-do-usuario">E-mail</label>
-                <input type="email" id="email-do-usuario" name="email-do-usuario" placeholder="Digite aqui" required>
-
+                <input type="email" id="email-do-usuario" name="email-do-usuario" placeholder="Digite seu e-mail" required>
 
                 <label for="feedback">Mensagem</label>
-                <textarea id="feedback" name="feedback" rows="5" placeholder="Digite aqui" required></textarea>
-
+                <textarea id="feedback" name="feedback" rows="5" placeholder="Escreva sua história aqui..." required></textarea>
 
                 <button type="submit">Publicar!</button>
             </form>
-
         </div>
-
     </main>
 
     <footer>
-       <footer>
-         <p>&copy; <span id="anoatual"></span> ProtegeBet-São Paulo</p>
-         <p id="ultimamodificacao"></p>
-          <a href="https://facebook.com"><img src="imagens/facebook.svg" alt="Facebook"></a>
-          <a href="https://instagram.com"><img src="imagens/instagram.svg" alt="Instagram"></a>
-        </nav>
-    </footer>
-
+        <div>
+            <p>&copy; <span id="anoatual"></span> ProtegeBet - São Paulo</p>
+            <p id="ultimamodificacao"></p>
+        </div>
+        <div class="socialmedia">
+            <a href="https://facebook.com" target="_blank" rel="noopener">
+                <img src="imagens/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener">
+                <img src="imagens/instagram.svg" alt="Instagram">
+            </a>
+        </div>
     </footer>
 
 </body>
-
 </html>

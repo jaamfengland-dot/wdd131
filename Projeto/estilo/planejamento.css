@@ -60,7 +60,7 @@ nav a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    transition: .3s;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
@@ -72,9 +72,6 @@ nav a:hover {
 ========================== */
 
 main {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 25px;
     max-width: 1200px;
     margin: 40px auto;
     padding: 20px;
@@ -83,9 +80,10 @@ main {
 .card {
     background: white;
     border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
     padding: 25px;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .card h2 {
@@ -94,56 +92,83 @@ main {
     margin-bottom: 20px;
 }
 
-.card img {
-    width: 180px;
-    max-width: 100%;
-    margin-bottom: 20px;
-}
-
 .card p {
     text-align: justify;
     margin-bottom: 15px;
 }
 
-/* ==========================
-          RODAPÉ
-========================== */
+/* Lista personalizada dentro das seções */
+.lista-dicas {
+    margin-left: 20px;
+    text-align: left;
+}
 
-footer {
-    background-color: #0d1b2a;
-    color: white;
-    text-align: center;
-    padding: 25px;
-    margin-top: 40px;
+.lista-dicas li {
+    margin-bottom: 8px;
 }
 
 /* ==========================
-       RESPONSIVIDADE
+        BLOCOS BET
 ========================== */
 
-@media (max-width: 768px) {
-
-    header {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    main {
-        grid-template-columns: 1fr;
-    }
+.bet {
+    display: flex;
+    gap: 20px;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    align-items: center;
+    margin-bottom: 25px;
 }
-/* Formulário */
+
+.bet img {
+    width: 220px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.bet-info {
+    flex: 1;
+}
+
+.bet h3 {
+    color: #0d1b2a;
+    margin-bottom: 10px;
+}
+
+.bet p {
+    text-align: justify;
+}
+
+/* ==========================
+        BOTÕES
+========================== */
+
+.btn {
+    display: inline-block;
+    background-color: #0056b3; 
+    color: #ffffff;          
+    padding: 10px 20px;        
+    border-radius: 5px;        
+    text-decoration: none;     
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #003d80;
+}
+
+/* ==========================
+        FORMULÁRIO
+========================== */
 
 .contato-principal {
     display: flex;
     justify-content: center;
-    padding: 30px;
+    padding: 10px 0;
 }
 
 form {
@@ -152,7 +177,7 @@ form {
     background: white;
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -182,75 +207,78 @@ form button {
     border: none;
     padding: 14px;
     border-radius: 8px;
-    font-size: 1rem;
     cursor: pointer;
-    transition: .3s;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
 form button:hover {
     background: #0b5ed7;
 }
 
-/* Footer social midia*/
+/* ==========================
+          RODAPÉ
+========================== */
+
 footer {
-    background-color: #171e05e1;
-    color: #aaa;
+    background-color: #0d1b2a;
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 20px 40px;
+    flex-wrap: wrap;
 }
- 
+
 .socialmedia {
     display: flex;
-    gap: 8px;
-}
- 
-.socialmedia img {
-    width: 24px;
-}
-.bet{
-    display: flex;
-    gap: 20px;
-    background: white;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+    gap: 12px;
     align-items: center;
-    margin-bottom: 25px;
 }
 
-.bet img{
-    width: 220px;
-    border-radius: 10px;
+.socialmedia img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
 }
 
-.bet-info{
-    flex: 1;
+.socialmedia img:hover {
+    transform: scale(1.15);
 }
 
-.bet h3{
-    margin-bottom: 10px;
-    color: #0d1b2a;
-}
+/* ==========================
+      RESPONSIVIDADE
+========================== */
 
-.bet p{
-    text-align: justify;
-}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
 
-@media (max-width:768px){
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
 
-    .bet{
+    .bet {
         flex-direction: column;
         text-align: center;
     }
 
-    .bet img{
+    .bet img {
         width: 100%;
         max-width: 350px;
     }
 
-    .bet p{
+    .bet p {
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 15px;
         text-align: center;
     }
 }
